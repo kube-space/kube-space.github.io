@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>kubespaces</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://raw.githubusercontent.com/kubespace-io/.github/main/resources/images/logo-black.png" type="image/png">
+
     <style>
       html, body {
         height: 80%;
@@ -10,7 +13,6 @@
       }
       #page-content {
         min-height: calc(100vh - 140px);
-        /* 140px = altura del logo (80px) + margen superior (60px) */
       }
       * {
         box-sizing: border-box;
@@ -38,6 +40,29 @@
         color: #000000;
         margin: 10px;
       }
+
+      @media (max-width: 768px) {
+        #page-content {
+          grid-template-columns: 1fr;
+        }
+        #logo {
+          margin-top: 30px; 
+        }
+        footer {
+          font-size: 14px; 
+          padding: 10px; 
+        }
+        footer a {
+          margin: 5px; 
+        }
+      }
+
+      @media (min-width: 768px) {
+        #page-content {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
     </style>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </head>
